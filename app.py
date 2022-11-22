@@ -1,10 +1,11 @@
 from flask import Flask, render_template, request
 from google.cloud import dialogflow
-from utils.settings import DIALOGFLOW_LANGUAGE_CODE,DIALOGFLOW_PROJECT_ID, SESSION_ID, TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_SENDER
+from utils.settings import *
 from utils.handler import get_twilio_messsage, proto_to_dict, webhook_handler
 from google.api_core.exceptions import InvalidArgument
 from twilio.rest import Client
 from utils.wadMapper import WADMapper
+
 app = Flask(__name__)
 
 session_client = dialogflow.SessionsClient()
