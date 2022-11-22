@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WhatsApp ChatBot</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/style.css')}}"
+    />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  </head>
+  <body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+      <main>
+        <section class="hero">
+          <div class="container">
+            <div class="hero-inner">
+              <div class="hero-copy">
+                <h1 class="hero-title mt-0">WhatsApp ChatBot</h1>
+                <p class="hero-paragraph">
+                  Made using Twilio-WA API and Dialogflow.
+                </p>
+              </div>
+              <div class="hero-media">
+                <div class="header-illustration">
+                  <img
+                    class="header-illustration-image asset-light"
+                    src="{{url_for('static', filename='images/header-illustration-light.svg')}}"
+                    alt="Header illustration"
+                  />
+                </div>
+                <div class="hero-media-illustration">
+                  <img
+                    class="hero-media-illustration-image asset-light"
+                    src="{{url_for('static', filename='images/hero-media-illustration-light.svg')}}"
+                    alt="Hero media illustration"
+                  />
+                </div>
+                <div class="hero-media-container">
+                  <img
+                    class="hero-media-image asset-light"
+                    src="{{url_for('static', filename='images/hero-media-light.jpeg')}}"
+                    alt="Hero media"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="features section">
+          <div class="container">
+            <div class="features-inner section-inner has-bottom-divider">
+              <div class="features-header text-center">
+                <div class="container-sm">
+                  <h2 class="section-title mt-0">Start ChatBot in 3 steps</h2>
+                  <br />
+                </div>
+              </div>
+              <div class="features-wrap">
+                <div class="feature is-revealing">
+                  <div class="feature-inner">
+                    <div class="feature-icon">
+                      <img
+                        class="asset-light"
+                        width="50px"
+                        src="{{url_for('static', filename='images/feature-01-light.png')}}"
+                        alt="Feature 01"
+                      />
+                    </div>
+                    <div class="feature-content">
+                      <h3 class="feature-title mt-0">Create Twilio Account</h3>
+                      <p class="text-sm mb-0">
+                        Navigate to WhatsApp sandbox settings and add webhook
+                        url.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="feature is-revealing">
+                  <div class="feature-inner">
+                    <div class="feature-icon">
+                      <img
+                        width="60px"
+                        class="asset-light"
+                        src="{{url_for('static', filename='images/feature-02-light.png')}}"
+                        alt="Feature 02"
+                      />
+                    </div>
+                    <div class="feature-content">
+                      <h3 class="feature-title mt-0">
+                        Create Dialogflow Agent
+                      </h3>
+                      <p class="text-sm mb-0">
+                        Create Service account on GCP and save key as
+                        "dialogflow.json".
+                      </p>
+
+                      <p class="text-sm mb-0">
+                        Navigate to agent fullfilment settings and add the same
+                        webhook url.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="feature is-revealing">
+                  <div class="feature-inner">
+                    <div class="feature-icon">
+                      <img
+                        class="asset-light"
+                        width="40px"
+                        src="{{url_for('static', filename='images/feature-03-light.png')}}"
+                        alt="Feature 03"
+                      />
+                    </div>
+                    <div class="feature-content">
+                      <h3 class="feature-title mt-0">Start Development</h3>
+                      <p class="text-sm mb-0">
+                        Fill values in settings.py file and run flask command to
+                        start local server
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+
+    <script src="{{url_for('static', filename='js/main.min.js')}}"></script>
+  </body>
+</html>
